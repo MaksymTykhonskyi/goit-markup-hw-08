@@ -1,0 +1,32 @@
+
+
+  
+  .client__list{
+    justify-content: center;
+    display: flex;
+  }
+  
+  .client__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    fill: #afb1b8;
+    transition: fill 250ms linear, border 250ms linear;
+
+    
+  .client__item &:hover, 
+  .client__item &:focus{
+    fill: var(--accent-color);
+    border: 1px solid #2196F3;
+    }
+}
+  
+  .client__item:not(:last-child){
+    margin-right: 30px;
+  }
+  
+  
