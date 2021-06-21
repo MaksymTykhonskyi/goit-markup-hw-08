@@ -227,6 +227,12 @@ body {
   margin-right: auto;
 }
 
+@media screen and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url("./");
+  }
+}
+
 .hero__description {
   font-weight: 900;
   font-size: 44px;
