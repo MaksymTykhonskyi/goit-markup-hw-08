@@ -3,12 +3,22 @@
   }
   
   .heading{
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 30px;
+
+
+    @media screen and (min-width:1200px){
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     margin-bottom: 50px;
+    }
   }
+  
   .staff__text{
     font-size: 16px;
     line-height: 1.18;
@@ -19,9 +29,14 @@
   
   
   .staff__list{
-    display: flex;
+    
+    @media screen and (min-width:768px){
+      // flex-wrap: wrap;
+      display: flex;
     margin-left: -30px;
     margin-top: -30px;
+
+    }
   }
   
   .staff__box{
@@ -29,14 +44,26 @@
     padding-bottom: 30px;
     padding-left: 35px;
     padding-right: 35px;
+    @media screen and (min-width:768px){
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+      
+    }
   }
   
   .staff__item{
-    flex-basis: calc((100% - 120px) / 4);
+    margin-right: 10px;
+    
+    @media screen and (min-width:768px){
+      flex-basis: calc((100% - 120px) / 4);
     margin-left: 30px;
     margin-top: 30px;
     background-color: var(--page-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      
+    }
   }
   
   .staff__title{
@@ -68,7 +95,12 @@
   
   .social__list{
     display: flex;
+    justify-content: center;
+
+    @media screen and (min-width:768px){
     justify-content: space-between;
+      
+    }
   }
   
   .social__icon{

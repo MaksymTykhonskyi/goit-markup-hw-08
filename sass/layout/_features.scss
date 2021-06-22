@@ -1,15 +1,22 @@
 .features__list{
-  display: flex;
-  margin-left: -30px;
-  margin-top: -30px;
+  
+  @media screen and (min-width:768px) {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px; 
+  }
 }
 
 .features__item{
-  margin-left: 30px;
+  
+  @media screen and (min-width:768px) {
+    margin-left: 30px;
   margin-top: 30px;
+  }
 }
 
 .features__icon-bd{
+  margin-top: 30px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -17,6 +24,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
+@media screen and (min-width:768){
+
+}
+  
 }
 
 .features__icon{
@@ -26,14 +38,21 @@
 
 .features__title{
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  margin-bottom: 10px;
+  text-align: center;
   text-transform: uppercase;
+  margin-bottom: 10px;
+
+  @media screen and (min-width:768px){
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .features__text{
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-color);
+
+  
+
 }
