@@ -93,7 +93,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 767px;
+    width: 768px;
   }
 }
 
@@ -347,17 +347,17 @@ body {
 
 @media screen and (min-width: 768px) {
   .staff__list {
+    flex-wrap: wrap;
     display: flex;
     margin-left: -30px;
     margin-top: -30px;
   }
 }
 
-.staff__box {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 35px;
-  padding-right: 35px;
+@media screen and (min-width: 1200px) {
+  .staff__list {
+    flex-wrap: nowrap;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -462,8 +462,22 @@ body {
   border: 1px solid #2196F3;
 }
 
-.client__item:not(:last-child) {
-  margin-right: 30px;
+.client__item {
+  flex-basis: calc(100% / 2 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .client__item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client__item {
+    flex-basis: calc(100% / 6 - 30px);
+  }
 }
 
 .page-footer {
@@ -777,6 +791,24 @@ body {
   height: 100vh;
   overflow: auto;
   background-color: wheat;
+}
+
+.mobile-menu__container {
+  position: relative;
+  padding-left: 25px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.mobile-menu__button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  top: 10px;
+  right: 0;
+  width: 40px;
+  height: 40px;
 }
 
 .mobile-menu.is-open {

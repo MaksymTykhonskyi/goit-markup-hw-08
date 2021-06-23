@@ -10,6 +10,29 @@
     overflow: auto;
     background-color: wheat;
 
+
+
+    &__container {
+        position: relative;
+        padding-left: 25px;
+        padding-top: 48px;
+    padding-bottom: 48px;
+        
+    }
+
+    &__button {
+      position: absolute;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        top: 10px;
+        right: 0;
+        width: 40px;
+        height: 40px;
+
+
+    }
+
 }
 
 .mobile-menu.is-open {

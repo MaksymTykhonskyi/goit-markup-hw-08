@@ -31,19 +31,20 @@
   .staff__list{
     
     @media screen and (min-width:768px){
-      // flex-wrap: wrap;
+      flex-wrap: wrap;
       display: flex;
     margin-left: -30px;
     margin-top: -30px;
 
     }
+
+    @media screen and (min-width:1200px){
+      flex-wrap: nowrap;
+      }
   }
   
   .staff__box{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 35px;
-    padding-right: 35px;
+    
     @media screen and (min-width:768px){
     padding-top: 30px;
     padding-bottom: 30px;
