@@ -221,10 +221,6 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.features__list {
-  display: flex;
-}
-
 @media screen and (min-width: 768px) {
   .features__list {
     flex-wrap: wrap;
@@ -369,13 +365,11 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .staff__box {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 35px;
-    padding-right: 35px;
-  }
+.staff__box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 .staff__item {
@@ -489,15 +483,23 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-container {
+    text-align: center;
+  }
+}
+
 .page-footer {
   background: var(--background-color);
   padding: 60px 15px;
   margin-bottom: 0;
 }
 
-.general-container {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 768px) {
+  .general-container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .logo-footer {
