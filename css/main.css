@@ -656,9 +656,9 @@ body {
 }
 
 .footer-form-button {
+  margin: 0 auto;
   display: block;
   min-width: 200px;
-  margin-left: 12px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -672,11 +672,14 @@ body {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  display: inline-flex;
   transition: background-color 250ms linear;
 }
 
 @media screen and (min-width: 1200px) {
+  .footer-form-button {
+    margin-left: 12px;
+    display: inline-flex;
+  }
   .footer-form-button:hover, .footer-form-button:focus {
     background-color: #188CE8;
   }
