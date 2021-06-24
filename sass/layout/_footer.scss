@@ -1,27 +1,53 @@
-.footer-container{
-
-  @media screen and (min-width:768px){
-    text-align: center;
-
-  }
-}
-
 .page-footer{
     background: var(--background-color);
-    padding: 60px 15px;
-    margin-bottom: 0;
-    }
     
-    .general-container{
-     
-      @media screen and (min-width:768px){
-        display: flex;
+    
+    
+  &__container{
+      padding-top: 60px;
+      padding-bottom: 60px;
+      margin-bottom: 0;
+      text-align: center;
+
+      @media screen and (min-width:1200px){
         align-items: baseline;
+        display: flex;
+        text-align: left;
         
       }
     }
 
-    .logo-footer{
+  &__tablet{
+        margin-bottom: 60px;
+      @media screen and (min-width:767px){
+        margin-bottom: 60px;
+      }
+    
+      @media screen and (min-width: 768px) and (max-width: 1199px){
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+        margin-bottom: 60px;
+        
+        
+      }
+
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+      }
+    }
+
+  &__links{
+      @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+      }
+    }
+
+  &__logo{
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
         font-size: 26px;
@@ -30,20 +56,21 @@
         margin-bottom: 20px;
         display: inline-block;
       }
+}
       
-      .white-logo{
+.white-logo{
         color: var(--page-color);
       }
 
-      .address{
+.address{
         font-style: normal;
        }     
       
-       .list-item-list:not(:last-child){
+.list-item-list:not(:last-child){
         margin-bottom: 9px;
       }
       
-      .address-link{
+.address-link{
         font-size: 14px;
         line-height: 1.71;
         color: var(--page-color);    
@@ -56,7 +83,7 @@
 }
       
       
-      .social-links-footer{
+.social-links-footer{
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -72,7 +99,7 @@
       
       
 
-      .social-footer-link{
+.social-footer-link{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -88,7 +115,7 @@
       }
       }
       
-      .social-foorer-title{
+.social-foorer-title{
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -97,25 +124,33 @@
         margin-bottom: 20px;
       }
       
-      .social-foorer-list{
+.social-foorer-list{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         cursor: pointer;
         
       }
+
+.social-footer-icon{
+        margin-right: 10px;
+      }
       
       
       
-      .footer-icon{
+.footer-icon{
         fill: var(--page-color);
       }
 
-      .footer-input-wrapper{
-        display: block;
-        margin-left: 93px;
-      }
+.footer-input-wrapper{
+
+
+
+  @media screen and (min-width:1200px) {
+    margin-left: 93px;
+  }
+}
       
-      .form-text{
+.form-text{
         margin-bottom: 20px;
         font-weight: 700;
         font-size: 14px;
@@ -124,18 +159,25 @@
         color: var(--page-color);
       }
       
-      .contact-form-input-footer{
-        width: 358px;
+.contact-form-input-footer{
+        max-width: 450px;
+        width: 100%;
         padding: 15px;
+        margin-bottom: 20px;
         background-color: var(--background-color);
         border: 1px solid rgba(255, 255, 255, 0.3);
         box-sizing: border-box;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         color: var(--page-color);
+
+        @media screen and (min-width:1200px) {
+          width: 358px;
+        }
       }
       
-      .footer-form-button{
+.footer-form-button {
+        display: block;
         min-width: 200px;
         margin-left: 12px;
         font-weight: 700;
@@ -153,14 +195,21 @@
         border-radius: 4px;
         display: inline-flex;
         transition: background-color 250ms linear;
-       
+
+  @media screen and (min-width: 1200px) {
+
+    
+   
+
         
       &:hover,
       &:focus{
         background-color: #188CE8;
       }
-}
+    }
+  }
       
-      .icon-footer-send{
+.icon-footer-send{
         margin-left: 10px;
-      }
+}
+    

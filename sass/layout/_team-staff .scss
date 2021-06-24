@@ -119,7 +119,8 @@
 }
   
   .social-footer{
-    display: block;
-    width: 206px;
-    margin-left: 70px;
+    
+    @media screen and (min-width:1200px){
+      
+    }
   }
