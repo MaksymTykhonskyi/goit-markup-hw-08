@@ -3,6 +3,7 @@
     
     
     
+    
   &__container{
       padding-top: 60px;
       padding-bottom: 60px;
@@ -56,6 +57,7 @@
         margin-bottom: 20px;
         display: inline-block;
       }
+    
 }
       
 .white-logo{
@@ -130,9 +132,13 @@
         cursor: pointer;
         
       }
-
 .social-footer-icon{
+
+      .social-footer-icon::not(:last-child) {
         margin-right: 10px;
+
+      
+        }
       }
       
       
@@ -142,8 +148,6 @@
       }
 
 .footer-input-wrapper{
-
-
 
   @media screen and (min-width:1200px) {
     margin-left: 93px;
