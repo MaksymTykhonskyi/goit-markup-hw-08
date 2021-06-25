@@ -871,27 +871,39 @@ body {
   background-color: wheat;
 }
 
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 .mobile-menu__container {
   position: relative;
   padding: 48px 25px;
   max-width: 480px;
 }
 
-.mobile-button-close {
+.mobile-menu__button--open {
   position: absolute;
   border: none;
   background-color: transparent;
   padding: 0;
   top: 10px;
-  right: 0;
+  right: 10px;
   width: 40px;
   height: 40px;
 }
 
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+@media screen and (min-width: 768px) {
+  .mobile-menu__button--open {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu .mobile-menu {
+    display: none;
+  }
 }
 
 .is-hidden {
