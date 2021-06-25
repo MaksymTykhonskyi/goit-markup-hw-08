@@ -132,13 +132,9 @@
         cursor: pointer;
         
       }
-.social-footer-icon{
 
-      .social-footer-icon::not(:last-child) {
+.social-footer-icon:not(:last-child) {
         margin-right: 10px;
-
-      
-        }
       }
       
       

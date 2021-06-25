@@ -10,17 +10,18 @@
     overflow: auto;
     background-color: wheat;
 
+}
 
 
-    &__container {
-        position: relative;
-        padding-left: 25px;
-        padding-top: 48px;
-    padding-bottom: 48px;
+
+    .mobile-menu__container {
+      position: relative;
+      padding: 48px 25px;
+      max-width: 480px;
         
     }
 
-    &__button {
+    .mobile-button-close {
       position: absolute;
         border: none;
         background-color: transparent;
@@ -29,14 +30,11 @@
         right: 0;
         width: 40px;
         height: 40px;
-
-
     }
 
-}
-
-.mobile-menu.is-open {
+    .mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-  }
+
+}
