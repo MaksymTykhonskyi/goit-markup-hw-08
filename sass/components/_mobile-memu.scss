@@ -29,6 +29,10 @@
   }
 
     &__button-open {
+      position: absolute;
+      top: 10px;
+    right: 15px;
+    
 
       @media screen and (min-width: 768px) {
         display: none;
@@ -54,9 +58,10 @@
     padding: 0;
     cursor: pointer;
     background-color: transparent;
-    border: 1px solid;
+    border: 1px solid rgba(0,0,0,0.1);
     border-radius: 50%;
     line-height: 0;
+    transform: color 250ms ;
 
     &:hover,
     &:focus {
@@ -95,6 +100,7 @@
     &__navigation-link-current {
       color: #2196F3;
     }
+    
 
     &__contacts-list {
       margin-bottom: 64px;
