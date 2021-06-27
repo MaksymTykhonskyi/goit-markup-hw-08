@@ -54,10 +54,15 @@
 
 
 .modal-form-checkbox-policy {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  // position: relative;
   font-size: 12px;
   line-height: 1.17;
   color: var(--text-color);
+  letter-spacing: 0.03em;
   margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
@@ -113,6 +118,7 @@
     background-position: 50% 50%;
     border-color: var(--accent-color);
     border-radius: 2px;
+   
   }
 }
 
@@ -156,7 +162,7 @@
   
   .modal-form-policy-link{
     text-decoration-line: underline;
-    color: #2196F3;
+    color: var(--accent-color);
     
   }
   
