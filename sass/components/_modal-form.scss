@@ -9,15 +9,7 @@
 
 
 
-.text-form{
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  margin-bottom: 12px;
-  color: var(--title-color);
 
-}
 
 .form-ladel{
   margin-bottom: 10px;
@@ -63,10 +55,20 @@
 
 .modal-form-checkbox-policy {
   position: relative;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--text-color);
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.modal-form-checkbox {
+  appearance: none;
+  
 }
 
 

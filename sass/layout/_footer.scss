@@ -20,15 +20,11 @@
 
   &__tablet{
         margin-bottom: 60px;
-      @media screen and (min-width:767px){
-        margin-bottom: 60px;
-      }
-    
+  
       @media screen and (min-width: 768px) and (max-width: 1199px){
         display: flex;
         align-items: baseline;
         justify-content: space-around;
-        margin-bottom: 60px;
         
         
       }
@@ -36,6 +32,7 @@
       @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
+        margin-bottom: 0;
       }
     }
 
