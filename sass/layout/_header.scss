@@ -5,10 +5,10 @@
      line-height: 1.20;
      color: var(--accent-color);
 
-     @media screen and (min-width: 1200px) {
-      font-size: 26px;
-      line-height: 1.19;
-    }
+    //  @media screen and (min-width: 1200px) {
+    //   font-size: 26px;
+    //   line-height: 1.19;
+    // }
   }
   
    .navigation__black-logo{
@@ -31,18 +31,15 @@
        align-items: center;
      }
   
-//  .social {
-//      display: flex;
-//      align-items: center;
-//    }
 
-.menu{
+
+.menu{  
   display: none;
   @media screen and (min-width: 768px) {
     
     display: flex;
     margin-left: 88px;
-  }
+  } 
 
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
